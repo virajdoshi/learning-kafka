@@ -1,0 +1,16 @@
+1. Run docker compose file
+    -> npm run dockerUp
+
+2. create the topic/replication factor/partition and mention the servers using below command
+    ->  docker compose exec broker \
+            kafka-topics --create \
+            --topic purchases \
+            --bootstrap-server localhost:9092 \
+            --replication-factor 1 \
+            --partitions 1
+
+3. Run command for producer to send messages
+    -> npm run producer
+
+4. Run command for consumer to consume messages
+    -> npm run consumer

@@ -1,0 +1,5 @@
+Kafka is distributed event streaming platform that used publish and subscribe mechanism to stream the records.
+    - distributed -> It means we distribute the entity by breaking it into multiple sub entitiy and store into multiple locations.
+                     Or we can store that full entitiy into multiple locations it is known as replication.
+                     Both methods are configurable.
+    - event streaming platform -> 
